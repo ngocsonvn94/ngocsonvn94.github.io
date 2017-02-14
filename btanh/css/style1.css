@@ -1,0 +1,13 @@
+h1{
+	text-align: center;
+	color: Red;
+
+}
+img {
+	max-width: 300px;
+	max-height: 300px;
+}
+p{
+	color: blue;
+	text-align: justify;
+}
