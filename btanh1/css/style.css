@@ -6,10 +6,14 @@
 	100%{transform: translate(-250px,0);}
 }
 @keyframes title {
-	0% { font-size: 23px; opacity: 0.5; }
-	25% { font-size: 26px; opacity: 0.7 }
-	50% { font-size: 29px; opacity: 0.9}
-	100% { font-size: 32px; opacity: 1.1}
+	0% { transform: translate(0,0); opacity: 0.5; }
+	100% { transform: translate(500px,0); opacity: 1.1}
+}
+@keyframes title2 {
+	0% { opacity: 0.5;  }
+	25% { opacity: 0.7;  }
+	50%{ opacity: 0.9;  }
+	100% { opacity: 1.2;  }
 }
 h1{
 	color: Red;
@@ -27,12 +31,12 @@ h1{
 .a1 img:hover {
 	opacity: 1;
 	transition: opacity 2s ease-in-out infinite;
+	animation: opacity 2s ease-in-out infinite;
 }
 #a2 {
 	font-size: 23px;
 	color: yellow;
-	text-align: center;
-	animation: title 2s ease infinite;
+	animation: title 5s ease-in-out infinite;
 }
 #a3 {
 	color: blue;
