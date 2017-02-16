@@ -1,0 +1,63 @@
+@keyframes title1 {
+	0% {opacity: 1;}
+	100% { opacity: 0;
+	}
+	0% {transform: translate(0,0);}
+	100%{transform: translate(-250px,0);}
+}
+@keyframes title {
+	0% { font-size: 23px; opacity: 0.5; }
+	25% { font-size: 26px; opacity: 0.7 }
+	50% { font-size: 29px; opacity: 0.9}
+	100% { font-size: 32px; opacity: 1.1}
+}
+h1{
+	color: Red;
+	text-align: center;
+}
+.a1 {
+	text-align: center;
+}
+.a1 img {
+	opacity: 0.5;
+	z-index: 3;
+}
+
+
+.a1 img:hover {
+	opacity: 1;
+	transition: opacity 2s ease-in-out infinite;
+}
+#a2 {
+	font-size: 23px;
+	color: yellow;
+	text-align: center;
+	animation: title 2s ease infinite;
+}
+#a3 {
+	color: blue;
+	opacity: 0.4;
+	position: fixed;
+	right: 150px;
+	bottom: 15px;
+	animation: title1 2s ease-in-out infinite;
+	transform: translate(150px,0);
+}
+body { background-color:#333; }
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	animation: snow 10s linear infinite;
+	z-index: -1;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
