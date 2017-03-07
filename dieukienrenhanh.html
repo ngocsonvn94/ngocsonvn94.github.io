@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//bai1
+function bai1() {
+		var x = 7;
+		var y = 6;
+		if (typeof x,y =="number", x>y) {
+			document.write("So lon nhat la x")
+           
+		}
+		if (typeof x,y =="number",x<y ) {
+			document.write("so lon nhat la y")
+		}
+		if (typeof x,y =="number", x==y ) {
+			document.write("Khong co so lon nhat")
+		}
+	}
+//bai2
+	function bai2(x) {
+ 	if (typeof x == "number" ,x >0 ) {
+	var i;
+	var j =1;
+	for (i=1; i <= x; i++) {
+		j = j*i;
+	}
+    document.write(j);
+}
+}
+//bai3
+var arr = [3,4,5,7,13,24];
+		var y = [];
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i]%2==0){
+				y.push(arr[i]);
+
+		document.write(y);
+			}
+			
+		}
+//bai4
+user = {
+		username: "nguyenson",
+		password: "son",
+		confirm: "son"
+	}
+	var a;
+	var b;
+	var c;
+	function bai4(a,b,c) {
+
+		if (a==user.username || b==user.password || c == user.confirm ){
+			if(a.length < 20 && b.length > 6 && b.length <32 && b==c){
+				document.write("Dung")
+			}
+		else{
+			document.write("sai");
+		}
+		}
+	}
+</script>
+</body>
+</html>
