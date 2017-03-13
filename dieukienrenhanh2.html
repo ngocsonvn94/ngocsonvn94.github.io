@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//bai1
+function bai1() {
+        var now = new Date();
+	 	var date = now.getDate();
+	 	var month = now.getMonth() + 1;
+	 	var year = now.getFullYear();
+	 	if (month <= 3 ) {
+	 		document.write(date + " " + month + " " + year + " " +"Spring");
+	 	}
+	 	 if (month > 3 && month <=6) {
+	 		document.write(date + month + year + " " + "Summer");
+	 	}
+	 	if (month > 6 && month <= 9) {
+	 		document.write(date + month + year + " " + "Autumm");
+	 	}
+	 	if (month > 9 && month <=12) {
+	 		document.write(date + month + year + " " + "Winter");
+	 	}
+
+	 }
+//bai2
+function bai2(x) {
+		if (typeof x == "number") {
+			x = x.toString();
+			if (x.length < 10) {
+				document.write(x);
+			}
+			else{ document.write(x.substr(0, 9) +"...")
+			}
+
+		}
+		else {
+			if (x.length < 10) {
+				document.write(x);
+			}
+			else{ document.write(x.substr(0, 9) +"...")
+			}
+		}
+	}
+//bai3
+	function bai3(x) {
+		if (x>0 && x<=3.9) {
+			document.write("Diem F");
+		}
+		if (x>3.9 && x<=5.4) {
+			document.write("Diem D");
+		}
+		if (x>5.4 && x<=6.9) {
+			document.write("Diem C");
+		}
+		if (x>6.9 && x<=8.4) {
+			document.write("Diem B");
+		}
+		if (x>8.4 && x<=10) {
+			document.write("Diem A");
+		}
+	}
+//bai4
+function translate(x) {
+		switch (x) {
+			case 1:
+			document.write("Privet");
+			break;
+			case 2:
+			document.write("Bonjour");
+			break;
+			case 3:
+			document.write("Ciao");
+			break;
+			case 4:
+			document.write("Kon'nichiwa");
+			break;
+			default:
+			document.write("Xin Chào");
+			break;
+		}
+	}
+//bai5
+	function bai5() {
+		var x = [false, false, false, true, false, true, false, true];
+		for (var i = 0; i < x.length; i++) {
+
+			if (x[i] == true) {
+				
+		
+			}
+			document.write("Giá trị true xuất hiện lần đầu trong mảng ở vị trí thứ " + x.indexOf(true));
+			break;
+		}
+	}
+//bai6
+function bai6() {
+		var x;
+		for (var i = 0; i <100;) {
+		while ( i%2 == 0) {
+			i++;
+			document.write("<div style='color: blue'>" + i + "</div>");
+		}
+		
+		while (i%2 == 1) {
+			while(i == (x +1) 
+
+			){
+				return false;
+			}
+			i++;
+			document.write("<div style='color:red'>" + i + "</div>")
+		}
+		}
+	}
+</script>
+
+</body>
+</html>
