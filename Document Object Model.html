@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="d1">
+<p id="p1" class="a1"> Hà Nội nằm giữa đồng bằng sông Hồng trù phú, nơi đây đã sớm trở thành 1 trung tâm chính trị, kinh tế và văn hóa ngay từ những buổi đầu của lịch sử Việt Nam</p>
+
+<p id="p2" class="a1">Sông Hồng là con sông chính của thành phố, bắt đầu chảy vào Hà Nội ở huyện Ba Vì và ra khỏi thành phố ở khu vực huyện Phú Xuyên tiếp giáp Hưng Yên rồi xuôi về Nam Định, thành phố có nhiều gắn kết với Thăng Long từ thời nhà Trần.</p>
+
+<p id="p3" class="a1">Sông Hồng chảy qua Hà Nội dài 163 km, chiếm khoảng một phần ba chiều dài của con sông này trên đất Việt Nam.Hà Nội còn có sông Đà là ranh giới giữa Hà Nội với Phú Thọ, hợp lưu với dòng sông Hồng ở phía Bắc thành phố tại huyện Ba Vì.</p>
+</div>
+
+<script>
+function changeFontSize(x){
+    document.getElementById("d1").style.fontSize = x +"px";
+    } 
+	//Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels.
+
+    function increaseFontSize() {
+    	var a = document.getElementById("d1").style.fontSize;
+    	var b = a.substring(0,2);
+    	var d = Number(b) + 1;
+    	if (d<30){
+    		d = d++;
+    		document.getElementById("p1").style.fontSize = d + "px" ;
+
+    	}
+    	
+    		
+
+}
+    	
+
+//Tăng kích thước font chữ của đoạn văn mong muốn (paragraph) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize()).
+function decreaseFontsize(){
+	var a = document.getElementById("d1").style.fontSize;
+    	var b = a.substring(0,2);
+    	var d = Number(b) - 1;
+    	if (d>12){
+    		d = d--;
+    		document.getElementById("p1").style.fontSize = d + "px" ;
+
+    	}
+
+}
+
+//Giảm kích thước font chữ của đoạn văn mong muốn (paragraph) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels (Sử dụng sau khi gọi hàm changeFontSize()).
+    function changeColor(){
+    	document.getElementById("p1").style.color = "blue";
+    	document.getElementById("p2").style.color = "yellow";
+    	document.getElementById("p3").style.color = "red";
+
+    } 
+//Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.
+    function changeBgColor(){
+    	document.body.style.backgroundColor = "red";
+    	
+    } 
+//Thay đổi màu nền của trang thành màu color.
+   function copyContent(){
+   	document.getElementById("p1").innerHTML = document.getElementById("p2").innerHTML;
+   }
+   
+//Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2.
+</script>
+    
+</body>
+</html>
