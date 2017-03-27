@@ -2,9 +2,31 @@
 <html>
 <head>
 	<title> May tinh</title>
+  <style>
+ body {
+  background-color: red;
+ }
+  .d1 {
+    margin-left: 550px;
+    
+    
+  }
+  .d2 {
+    
+    margin-left: 550px;
+    margin-top: 100px;
+
+  }
+
+</style>
 </head>
+
 <body>
-<FORM name="form1">
+
+<div class="d1">
+<button id="button1">Change theme</button>
+<div>
+<form name="form1" class="f1">
 <table border=1 bordercolor="blue" width=174>
 <tr><td><INPUT TYPE="text" NAME="tex1" size=22 maxlength=0></td></tr>
 <table border=2 bordercolor="green">
@@ -25,10 +47,11 @@
 <td width=10><INPUT TYPE="button" value="    .    " class="fon1" onClick="txtf('.')"></td>
 <td width=10><INPUT TYPE="button" value="   =   "   class="fon3" onClick="equ()"></td>
 <td width=10><INPUT TYPE="button" value="   *    "  class="fon2" onClick="operator('*')"></td></tr><tr>
-<td width=10><INPUT TYPE="button" value="   √   "  class="fon4" onClick="sqrt1()"></td>
+<td width=10><INPUT TYPE="button" value="  sqrt  "  class="fon4" onClick="sqrt1()"></td>
 <td width=10><INPUT TYPE="button" value="   C   " class="fon" onClick="ac()"></td>
 </tr>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 	var txt="",flag1=1,flag=1,value=0,ans=0,oper="!",an=0,flag2=2
 
@@ -104,8 +127,19 @@ function sqrt1() {
 
     document.form1.tex1.value=(Math.sqrt(eval(document.form1.tex1.value)))
 }
+ 
+ $(document).ready(function(){
+$("#button1").click(function(){
+  $(".d1").toggleClass("d2")
+});
+
+ });
+
+ 
 
 </script>
-
+</div>
+</div>
 </body>
+
 </html>
